@@ -1,3 +1,55 @@
+# -----------------------------
+# Custom CSS Styling
+# -----------------------------
+st.markdown("""
+<style>
+
+body {
+    background: linear-gradient(135deg, #f8fafc, #e0f2fe 50%, #f1f5f9 100%);
+}
+
+.main {
+    background-color: transparent;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+div[data-testid="stMetric"] {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-bottom: 10px;
+}
+
+div[data-testid="stDataFrame"] {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+button {
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: white;
+    border-radius: 10px;
+    padding: 8px 20px;
+    border: none;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #1d4ed8, #2563eb);
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
 import streamlit as st
 import pandas as pd
 import numpy as np
